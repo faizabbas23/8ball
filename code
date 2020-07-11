@@ -1,0 +1,13 @@
+import random
+from random import randint
+def ball():
+    number = randint(1,9)
+    good_answers = ["It is certain","Outlook good","You may rely on it"]
+    bad_answers = ["Ask again later","Concentrate and ask again","Reply hazy, try again","My reply is no","My sources say no"]
+    if (number % 2) ==0:
+        print(random.choice(good_answers))
+    elif (number % 2) == 1:
+        print(random.choice(bad_answers))
+ball()
+        
+
